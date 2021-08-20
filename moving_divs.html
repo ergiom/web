@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #box1 {
+            background-color: blue;
+        }
+
+        #box2 {
+            background-color: blueviolet;
+        }
+
+        #box3 {
+            background-color: coral;
+        }
+
+        .box {
+            height: 100px;
+            padding: 10px;
+            border: black;
+            border-style: solid;
+            margin: 10px;
+            flex: 1 1 auto;
+        }
+
+        #boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #big-div {
+            margin: auto;
+            height: 100px;
+            background-color: crimson;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        header {
+            background-color: chartreuse;
+            position:absolute;
+            width: 100%;
+            top: 0px;
+        }
+
+        footer {
+            background-color: chartreuse;
+            position:absolute;
+            width: 100%;
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        this is a header
+    </header>
+    <div id="boxes">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+    </div>
+    <div id="big-div"></div>
+    <footer>
+        this is a footer
+    </footer>
+</body>
+
+</html>
