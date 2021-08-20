@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            header {
+                height: 5vh;
+                width: 100%;
+                /* background-color: rgb(8, 224, 44); */
+            }  
+
+            nav {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            main {
+                height: 85vh;
+                width: 100%;
+                /* background-color: coral; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            footer {
+                height: 10vh;
+                width: 100%;
+                background-color: rgb(129, 128, 128);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-item {
+                display: inline-block;
+                padding: 10px;
+            }
+
+            #search-div {
+                height: 50vh;
+                width: 50vw;
+                /* background-color: cyan; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #search-div-logo-block {
+                padding: 10px;
+                margin: 10px;
+                /* background-color: darkblue; */
+                /* color: darkgray; */
+            }
+            
+            #search-div-form {
+                
+            }
+
+            #search-div-buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .button {
+                padding: 10px;
+                margin: 5px;
+                border-radius: 5px;
+                background-color: rgb(170, 170, 170);
+            }
+
+            #search-div-text {
+
+            }
+
+            .icon {
+                height: 25px;
+                width: auto;
+            }
+
+            #search-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                background-color: white;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 40px;
+                outline: none;
+            }
+            
+            #input-text {
+                border-style: none;
+            }
+
+            .footer-div {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                border-style: solid;
+                border-width: 2px;
+                border-color: white;
+                border-top-color: dimgray;
+            }
+
+            #logo {
+                height: 100px;
+                width: 200px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="nav-item" href="#">Mail</a>
+                <a class="nav-item" href="#">Grafika</a>
+                <a class="nav-item" href="#"><img class="icon" src="https://www.pngfind.com/pngs/m/617-6173786_small-icon-png-search-icon-svg-transparent-png.png" alt="small img"></a>
+                <a class="nav-item" href="#"><img class="icon" src="https://www.pngfind.com/pngs/m/617-6173786_small-icon-png-search-icon-svg-transparent-png.png" alt="small img2"></a>
+            </nav>
+        </header>
+        <main>
+            <div id="search-div">
+                <a id="search-div-logo-block" href="#">
+                    <img id="logo" src="https://www.pngfind.com/pngs/m/617-6173786_small-icon-png-search-icon-svg-transparent-png.png" alt="Booble">
+                </a>
+                <form id="search-div-form">
+                    <div id="search-bar">
+                        <img id="small-search-icon" class="icon" src="https://www.pngfind.com/pngs/m/617-6173786_small-icon-png-search-icon-svg-transparent-png.png" alt="small-search-icon">
+                        <input id="input-text" type="text">
+                        <img id="small-keyboard-icon" class="icon" src="https://www.pngfind.com/pngs/m/617-6173786_small-icon-png-search-icon-svg-transparent-png.png" alt="small-keyboard-icon">
+                    </div>
+                    <div id="search-div-buttons">
+                        <a class="button" href="#">Search in Booble</a>
+                        <a class="button" href="#">The other one</a>
+                    </div>
+                </form>
+                <div id="search-div-text">Change your language to: <a href="#">Lang</a></div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-div">
+                <a class="footer-text">Polska</a>
+            </div>
+            <div id="bottom-footer" class="footer-div">
+                <a href="#" class="footer-text">About us</a>
+                <a href="#" class="footer-text">Advertise yourself</a>
+                <a href="#" class="footer-text">For enterprises</a>
+                <a href="#" class="footer-text">How searching works</a>
+                <a href="#" class="footer-text">Privacy</a>
+                <a href="#" class="footer-text">Rules</a>
+                <a href="#" class="footer-text">Settings</a>
+            </div>
+        </footer>
+    </body>
+</html>
